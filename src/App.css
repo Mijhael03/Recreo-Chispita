@@ -45,6 +45,55 @@
 */
 
 
+
+/* IMGAENN BARRA */
+.header-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor */
+.header-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Imagen */
+.header-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Texto encima */
+.header-title {
+  position: absolute;
+  top: 50%;       /* Centro vertical */
+  left: 50%;      /* Centro horizontal */
+  transform: translate(-50%, -50%); /* Ajusta para que quede perfectamente centrado */
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+
+
+
+
+
+
+
+
 /*  ======  barra ==========  */
 
 
@@ -79,4 +128,25 @@ body {
   background-color: #e1def0;
   margin: 0;
   padding: 20px;
+}
+
+
+
+
+/* Sección con fondo de imagen */
+.section-background {
+  background-image: 
+      /*linear-gradient(rgba(136, 136, 136, 0.5), rgba(185, 185, 185, 0.5)),
+      */
+      url('/src/IMG/cuerpo3.jpg'); /* Imagen en /public */
+  background-size: cover; /* Cubre todo el div */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar texto verticalmente */
+  align-items: center;     /* Centrar texto horizontalmente */
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 }
